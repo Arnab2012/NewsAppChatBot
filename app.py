@@ -6,9 +6,10 @@ import streamlit as st
 app = Flask(__name__)
 
 st.header("App is working..")
-@app.route('/')
+@app.route('/',method=['POST'])
 def home():
-    return 'Hello, World!'
+    data=request.get_json()
+    # return 'Hello, World!'
 
 if __name__ == '__main__':
     app.run(debug=True)
