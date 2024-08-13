@@ -1,1 +1,1 @@
-# It is a NewsAppChatBot
+# NewsAppChatBot
